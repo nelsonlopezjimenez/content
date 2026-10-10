@@ -47,6 +47,7 @@
     "offline:build-extras": "env-cmd --silent cross-env CONTENT_ROOT=files BUILD_OUT_ROOT=build CURRICULUM_ROOT=offline/sources/curriculum GENERIC_CONTENT_ROOT=offline/sources/generic-content/files rari build --no-basic --curriculum --generics && node scripts/offline/fix-windows-paths.js build && node scripts/offline/fix-curriculum.js build",
     "offline:download": "node scripts/offline/download.js",
     "offline:inventory": "node scripts/offline/inventory.js",
+    "offline:pack": "node scripts/offline/pack.js",
     "offline:serve": "node scripts/offline/server.js",
     "start": "npm run --silent info:fred && npm run up-to-date-check && env-cmd --silent cross-env CONTENT_ROOT=files NODE_ENV=production FRED_PLAYGROUND_LOCAL=true FRED_PLAYGROUND_PORT=5043 FRED_PORT=5042 FRED_WRITER_MODE=true fred server",
     "test": "node --test \"tests/**/*.test.js\" \"scripts/**/*.test.js\"",
